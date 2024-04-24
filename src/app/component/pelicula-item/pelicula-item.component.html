@@ -1,0 +1,47 @@
+<div class="container lg:w-4/4 md:w-4/4 p-4 w-full relative">
+  <a 
+    class="block h-48 rounded-lg overflow-hidden image-hover transition-all duration-500 hover:h-60">
+    <img 
+      [routerLink]="['pelicula', pelicula?.imdbID]" 
+      alt="ecommerce" 
+      class="object-cover object-center w-full h-full block"
+      [src]="pelicula ? pelicula.Poster : ''" 
+    />
+  </a>
+
+  <div class="mt-4">
+    <!-- Cambiado a texto blanco -->
+    <h2 class="text-white title-font text-xl font-medium">
+      {{ pelicula.Title?.substring(0, 20) }}
+      {{ pelicula && pelicula.Title[21] ? "..." : null }}
+    </h2>
+   
+    <strong class="text-white">Categoria:</strong>
+    <span class="text-red-600"> {{ pelicula?.category }}</span>
+    <br />
+
+    <!-- Cambiado a texto blanco -->
+    <a [routerLink]="['pelicula', pelicula?.imdbID]" class="text-white hover:underline">
+      Ver más detalles
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+.fondo{
+    background-color:#111111;
+}
+
+.bg-indigo-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(117, 25, 25) !important;
+}
+
+

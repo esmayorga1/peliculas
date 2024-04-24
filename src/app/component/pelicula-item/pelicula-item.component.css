@@ -1,0 +1,13 @@
+.image-hover:hover img {
+    /* transform: scale(1.05); Increase scale by 5% */
+    /* transition: transform 0.2s ease-in-out; Smooth transition effect */
+  }
+
+  .container { 
+    /* height: 300px; */
+    width: 200px;
+
+    /* display: flex;  */
+    align-items: center; 
+    justify-content: center; 
+  }

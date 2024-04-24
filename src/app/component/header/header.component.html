@@ -1,0 +1,42 @@
+<header class="text-gray-600 body-font fondo fixed top-0 left-0 w-full z-10"> <!-- Agregar clases para mantenerlo fijo -->
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-red-500 mb-4 md:mb-0"> 
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 
+  bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+        <path d="M2 17l10 5 10-5"></path>
+        <path d="M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">Movies Ucompensar</span> 
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 text-red-500 hover:text-orange-700 hover:underline" routerLink="" ng-reflect-router-link="" href="">Inicio </a>
+      <a (click)="filterByCategory('Acción')" class="mr-5 text-red-500 hover:text-red-700 hover:underline cursor-pointer"> Acción</a>
+      <a (click)="filterByCategory('Comedia')" class="mr-5 text-red-500 hover:text-red-700 hover:underline cursor-pointer"> Comedia</a>
+      <a (click)="filterByCategory('Romance')" class="mr-5 text-red-500 hover:text-red-700 hover:underline cursor-pointer"> Romance</a>
+      <a (click)="filterByCategory('Horror')" class="mr-5 text-red-500 hover:text-red-700 hover:underline cursor-pointer"> Terror</a>
+      <a (click)="filterByCategory('Infantil')" class="mr-5 text-red-500 hover:text-red-700 hover:underline cursor-pointer"> Infantiles</a>
+    </nav>  
+  </div>
+</header>
+<hr>
+  
+  <header class="text-gray-600 body-font fondo">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-red-500 mb-4 md:mb-0"> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 
+  bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Peliculas Ucompensar</span> <!-- Cambiado a texto naranja -->
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 text-red-500 hover:text-orange-700 hover:underline" routerLink="" ng-reflect-router-link="" href="">Inicio </a>
+        <a (click)="filterByCategory('Acción')" class="mr-5 text-red-500 hover:text-red-700 hover:underline cursor-pointer"> Acción</a>
+        <a (click)="filterByCategory('Comedia')" class="mr-5 text-red-500 hover:text-red-700 hover:underline cursor-pointer"> Comedia</a>
+        <a (click)="filterByCategory('Romance')" class="mr-5 text-red-500 hover:text-red-700 hover:underline cursor-pointer"> Romance</a>
+        <a (click)="filterByCategory('Horror')" class="mr-5 text-red-500 hover:text-red-700 hover:underline cursor-pointer"> Terror</a>
+        <a (click)="filterByCategory('Infantil')" class="mr-5 text-red-500 hover:red-orange-700 hover:underline cursor-pointer"> Infantiles</a>
+      </nav>  
+    </div>
+</header>

@@ -1,0 +1,11 @@
+
+<div *ngIf="pelicula.length > 0; else noResults">
+    <div class="flex flex-wrap -m-4"> 
+      <!-- <app-pelicula-item *ngFor="let pelicula of pelicula"></app-pelicula-item> -->
+      <app-pelicula-item  *ngFor="let pelicula of pelicula" [pelicula]="pelicula"></app-pelicula-item>
+    </div>
+  </div>
+  
+  <ng-template #noResults>
+    <p>No se encontraron resultados.</p>
+  </ng-template>
